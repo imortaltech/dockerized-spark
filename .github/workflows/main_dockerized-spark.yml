@@ -35,7 +35,7 @@ jobs:
           context: ./
           tags:  ${{ secrets.DOCKER_USERNAME }}/spark-docker-app:latest
           push: true
-          file: ./Dockerfile
+          file: ./alpine/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           
