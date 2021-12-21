@@ -42,7 +42,7 @@ RUN set -ex && \
 RUN rm $SPARK_HOME/jars/kubernetes-client-*.jar
 ADD https://repo1.maven.org/maven2/io/fabric8/kubernetes-client/4.4.2/kubernetes-client-4.4.2.jar $SPARK_HOME/jars
 
-ADD https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.1/$SPARK_VERSION/spark-avro_2.12-$SPARK_VERSION.jar $SPARK_HOME/jars
+ADD https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/$SPARK_VERSION/spark-avro_2.12-$SPARK_VERSION.jar $SPARK_HOME/jars
 
 RUN cp ./sparkKafkaConsumetoCassandra-1.0-SNAPSHOT.jar $SPARK_HOME/jars/
 
