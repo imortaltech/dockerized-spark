@@ -44,10 +44,10 @@ ADD https://repo1.maven.org/maven2/io/fabric8/kubernetes-client/4.4.2/kubernetes
 
 ADD https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.1/$SPARK_VERSION/spark-avro_2.12-$SPARK_VERSION.jar $SPARK_HOME/jars
 
-RUN cp alpine\sparkKafkaConsumetoCassandra-1.0-SNAPSHOT.jar $SPARK_HOME/jars/
+RUN cp ./sparkKafkaConsumetoCassandra-1.0-SNAPSHOT.jar $SPARK_HOME/jars/
 
 WORKDIR $SPARK_HOME/local
 
-COPY standalone /opt/spark/sbin/standalone
+COPY ./standalone /opt/spark/sbin/standalone
 
 ENTRYPOINT [ "/opt/entrypoint.sh" ]
