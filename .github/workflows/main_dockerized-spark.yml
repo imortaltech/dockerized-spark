@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Build Dockerized Spark
+name: Build Dockerized Spark application
 
 on:
   push:
